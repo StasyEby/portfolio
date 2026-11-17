@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explainable AI Loan Decision Engine | Blessing Udemezue</title>
+
+<style>
+:root {
+    --navy: #10243a;
+    --gold: #c6a45c;
+    --light: #f5f7fa;
+    --text: #344054;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: white;
+}
+
+header {
+    background: var(--navy);
+    color: white;
+    padding: 65px 8%;
+}
+
+nav {
+    margin-bottom: 45px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    max-width: 850px;
+    margin: 15px 0;
+}
+
+header p {
+    max-width: 750px;
+    color: #d9e2ec;
+    font-size: 17px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.tags span {
+    border: 1px solid #526477;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+main {
+    max-width: 1050px;
+    margin: auto;
+    padding: 55px 25px;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--gold);
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: var(--light);
+    padding: 22px;
+    border-radius: 8px;
+    border-left: 3px solid var(--gold);
+}
+
+.card h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 9px;
+}
+
+.highlight {
+    background: var(--light);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 13px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn.secondary {
+    background: var(--navy);
+    color: white;
+}
+
+footer {
+    background: var(--navy);
+    color: #d9e2ec;
+    text-align: center;
+    padding: 28px 15px;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 7%;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">← Back to Portfolio</a>
+    </nav>
+
+    <div class="eyebrow">AI & Innovation Project</div>
+
+    <h1>Explainable AI Loan Decision Engine</h1>
+
+    <p>
+        Exploring how machine learning and Explainable Artificial
+        Intelligence can support transparent, interpretable and
+        responsible lending decisions in financial services.
+    </p>
+
+    <div class="tags">
+        <span>Artificial Intelligence</span>
+        <span>Explainable AI</span>
+        <span>Fintech</span>
+        <span>Machine Learning</span>
+        <span>Python</span>
+    </div>
+</header>
+
+<main>
+
+<section>
+    <h2>Project Overview</h2>
+
+    <p>
+        This project explores the application of Explainable Artificial
+        Intelligence (XAI) to loan approval prediction. It demonstrates
+        how a machine learning model can generate predictions and how
+        explainability techniques can help interpret the factors
+        influencing those predictions.
+    </p>
+
+    <p>
+        The project connects AI model development with a practical
+        financial services use case, focusing on transparency,
+        interpretability and responsible AI adoption.
+    </p>
+</section>
+
+<section>
+    <h2>The Business Problem</h2>
+
+    <p>
+        Financial institutions increasingly explore machine learning
+        to support lending processes. However, predictions from
+        complex models may be difficult for business stakeholders
+        and customers to understand.
+    </p>
+
+    <p>
+        In lending environments, understanding the factors influencing
+        a model's prediction is important for transparency,
+        accountability and informed decision-making.
+    </p>
+</section>
+
+<section>
+    <h2>Project Objectives</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Prediction</h3>
+            <p>Develop a machine learning model for loan approval prediction.</p>
+        </div>
+
+        <div class="card">
+            <h3>Interpretability</h3>
+            <p>Apply Explainable AI techniques to interpret model predictions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Feature Analysis</h3>
+            <p>Examine the factors contributing to individual and overall model predictions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Business Application</h3>
+            <p>Explore how model explanations can support more transparent lending workflows.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Technology & Tools</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Python</h3>
+            <p>Programming and model development.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scikit-learn</h3>
+            <p>Machine learning model development and evaluation.</p>
+        </div>
+
+        <div class="card">
+            <h3>SHAP</h3>
+            <p>Explaining feature contributions to model predictions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pandas & NumPy</h3>
+            <p>Data preparation and numerical analysis.</p>
+        </div>
+
+        <div class="card">
+            <h3>Matplotlib</h3>
+            <p>Visualising model explanations and analysis.</p>
+        </div>
+
+        <div class="card">
+            <h3>Google Colab</h3>
+            <p>Notebook-based development and experimentation.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Explainability Approach</h2>
+
+    <p>
+        SHAP (SHapley Additive exPlanations) was used to examine
+        how different input features contribute to model predictions.
+    </p>
+
+    <ul>
+        <li>SHAP feature importance analysis.</li>
+        <li>Global feature contribution visualisation.</li>
+        <li>Individual prediction explanations.</li>
+        <li>SHAP waterfall visualisations.</li>
+    </ul>
+
+    <div class="highlight">
+        <strong>Key observation:</strong>
+        The analysis identified loan amount as an important
+        contributing feature in the model's explanations.
+        SHAP visualisations were used to explore how individual
+        features influenced predictions.
+    </div>
+</section>
+
+<section>
+    <h2>Business Relevance</h2>
+
+    <p>
+        This project demonstrates how Explainable AI can contribute
+        to discussions around responsible AI implementation in
+        financial services.
+    </p>
+
+    <ul>
+        <li>Greater interpretability of automated predictions.</li>
+        <li>Improved communication between business and technical teams.</li>
+        <li>More transparent AI-supported lending workflows.</li>
+        <li>Better understanding of model behaviour and limitations.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Project Deliverables</h2>
+
+    <p>
+        The accompanying Jupyter Notebook contains the model
+        development, analysis, evaluation and SHAP explainability
+        implementation.
+    </p>
+
+    <div class="actions">
+        <a class="btn"
+           href="https://github.com/StasyEby/portfolio/blob/main/explainable-loan-decision-engine/explainable_loan_decision_engine.ipynb"
+           target="_blank" rel="noopener">
+            View Jupyter Notebook →
+        </a>
+
+        <a class="btn secondary"
+           href="https://github.com/StasyEby/portfolio/tree/main/explainable-loan-decision-engine"
+           target="_blank" rel="noopener">
+            View Project Repository →
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2>Project Status & Disclaimer</h2>
+
+    <p>
+        This is an educational and portfolio project demonstrating
+        practical exploration of machine learning and Explainable AI.
+        It is not a validated credit-scoring system and should not
+        be used to approve or reject actual loan applications.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Blessing Udemezue | Business Technology & Operations Leader</p>
+    <p><a href="index.html">Return to Portfolio Homepage</a></p>
+</footer>
+
+</body>
+</html>
